@@ -1,0 +1,9 @@
+host slash16.org
+
+# permet d'obtenir les ip relatives au domaine
+
+whois [ip]
+
+# remplacer [ip] par une des addresses recuperees avec host
+# chercher le fournisseur dans les informations fournies par whois
+# le fournisseur est Amazon Technologies Inc.
