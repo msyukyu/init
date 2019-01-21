@@ -1,0 +1,1 @@
+ssh $utilisateur_distant@$hote_distant
