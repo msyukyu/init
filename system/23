@@ -1,0 +1,4 @@
+ssh $utilisateur_distant@$hote_distant
+# pour se connecter via ssh
+# pour se connecter via la session graphique, il suffit
+# d'inserer son username et password pour se log
