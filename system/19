@@ -1,1 +1,2 @@
-systemctl list-units | grep "loaded"
+sysv-rc-conf --list
+# type : daemon
