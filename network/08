@@ -6,4 +6,4 @@ whois [ip]
 
 # remplacer [ip] par une des addresses recuperees avec host
 # chercher le fournisseur dans les informations fournies par whois
-# le fournisseur est Amazon Technologies Inc.
+# le fournisseur est AWS (Amazon Technologies Inc).
