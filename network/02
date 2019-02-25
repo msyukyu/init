@@ -1,3 +1,3 @@
-{ ifconfig | grep "broadcast" | sed 's/.*broadcast //' | awk '{print $1}';
-# recupere la ligne avec broadcast, garde ce qu'il y a apres, affiche le premier element
-ping -c2 $(ifconfig | grep "broadcast" | sed 's/.*broadcast //' | awk '{print $1}') | grep 'from' | sed 's/.*from //' | awk '{print $1}' | sort -u | sed 's/.$//'; }
+eval ifconfig | grep "broadcast" | sed 's/.*broadcast //' | awk '{print $1}';
+ping -c2 $(ifconfig | grep "broadcast" | sed 's/.*broadcast //' | awk '{print $1}') | grep 'from' | sed 's/.*from //' | awk '{print $1}' | sort -u | sed 's/.$//';
+# recupere la ligne avec broadcast, garde ce qu'il y a apres, affiche le premier element (ligne 1)
