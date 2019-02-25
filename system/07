@@ -1,1 +1,1 @@
-cat /var/run/sshd.pid
+eval cat /var/run/sshd.pid

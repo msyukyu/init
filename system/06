@@ -1,1 +1,1 @@
-service ssh restart
+eval service ssh restart

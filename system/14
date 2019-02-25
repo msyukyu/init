@@ -1,1 +1,1 @@
-tail -f /var/log/syslog &
+eval tail -f /var/log/syslog &

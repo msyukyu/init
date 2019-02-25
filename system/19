@@ -1,2 +1,2 @@
-sysv-rc-conf --list
+eval sysv-rc-conf --list
 # type : daemon

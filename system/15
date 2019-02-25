@@ -1,1 +1,1 @@
-pkill tail
+eval pkill tail

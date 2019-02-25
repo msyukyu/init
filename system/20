@@ -1,1 +1,1 @@
-cat /etc/passwd
+eval cat /etc/passwd
