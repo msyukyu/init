@@ -1,8 +1,9 @@
-grep --include="*.c" -rl '^\ \*$' * | xargs -I % sed -i.old 's/^\ \*$/\*\*/g' %
-grep --include="*.c" -rl '^\ \*\/$' * | xargs -I % sed -i.old 's/^\ \*\/$/\*\//g' %
-printf -v pad %32s
-mymail=$(whoami | awk '{print "<" $1 "@student.s19.be" ">"}')$pad
-mymail=${mymail:0:32}
-thymail="<marvin@42.fr>"$pad
-thymail=${thymail:0:32}
-grep --include="*.c" -rl "$thymail" * | xargs -I % sed -i.old "s/$thymail/$mymail/g" %
+grep --include="*.c" -rl '^\ \*$' * | xargs -I % sed -i.old 's/^\ \*$/\*\*/g' %;
+grep --include="*.c" -rl '^\ \*\/$' * | xargs -I % sed -i.old 's/^\ \*\/$/\*\//g' %;
+printf -v pad %32s;
+mymail=$(whoami | awk '{print "<" $1 "@student.s19.be" ">"}')$pad;
+mymail=${mymail:0:32};
+thymail="<marvin@42.fr>"$pad;
+thymail=${thymail:0:32};
+grep --include="*.c" -rl "$thymail" * | xargs -I % sed -i.old "s/$thymail/$mymail/g" %;
+grep --include="*.old" -rl "$thymail" * | xargs -I % rm %;

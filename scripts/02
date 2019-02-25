@@ -1,2 +1,2 @@
-killall -u username
-deluser --remove-home -f username
+eval killall -u username;
+eval deluser --remove-home -f username;
