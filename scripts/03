@@ -1,5 +1,5 @@
-grep --include="*.c" -rl '^\ \*$' * | xargs -I % sed -i.old 's/^\ \*$/\*\*/g' %
-grep --include="*.c" -rl '^\ \*\/$' * | xargs -I % sed -i.old 's/^\ \*\/$/\*\//g' %
+grep --include="*.c" -rl '^\ \*' * | xargs -I % sed -i.old 's/^\ \*/\*\*/g' %
+grep --include="*.c" -rl '^\ \*\/' * | xargs -I % sed -i.old 's/^\ \*\//\*\//g' %
 printf -v pad %32s
 mymail=$(whoami | awk '{print "<" $1 "@student.s19.be" ">"}')$pad
 mymail=${mymail:0:32}
