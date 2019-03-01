@@ -6,3 +6,4 @@ mymail=${mymail:0:32}
 thymail="<marvin@42.fr>"$pad
 thymail=${thymail:0:32}
 grep --include="*.c" -rl "$thymail" * | xargs -I % sed -i.old "s/$thymail/$mymail/g" %
+grep --include="*.old" -rl "$thymail" * | xargs -I % rm %;
